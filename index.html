@@ -37,7 +37,7 @@
 }
     @media only screen and (min-width: 400px) {
   
-#ul li{
+h1{
   
   font-size: 200%;
  
@@ -403,7 +403,7 @@ function addGoalToDOM (goal) {
                   
                 }
                 style={{textDecoration: item.complete ? 'line-through' : 'none'}}>
-                  {item.name}
+                 <h1> {item.name}</h1>
               </span>
               <button onClick={() => props.remove(item)}>
                 X
