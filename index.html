@@ -168,7 +168,7 @@ function generateId () {
             cb()
           })
           .catch(() => {
-            alert('There was an error. Try again.')
+           
           })
       }
     }
@@ -180,7 +180,7 @@ function generateId () {
         return API.deleteTodo(todo.id)
           .catch(() => {
             dispatch(addTodoAction(todo))
-            alert('An error occurred. Try again.')
+           
           })
       }
     }
@@ -192,7 +192,7 @@ function generateId () {
         return API.saveTodoToggle(id)
           .catch(() => {
             dispatch(toggleTodoAction(id))
-            alert('An error occurred. Try again.')
+           
           })
       }
     }
@@ -205,7 +205,7 @@ function generateId () {
             dispatch(addGoalAction(goal))
             cb()
           })
-          .catch(() => alert('There was an error. Try again.'))
+          .catch(() => 
       }
     }
 
@@ -216,7 +216,7 @@ function generateId () {
         return API.deleteGoal(goal.id)
           .catch(() => {
             dispatch(addGoalAction(goal))
-            alert('An error occurred. Try again.')
+           
           })
       }
     }
